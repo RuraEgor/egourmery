@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "assets/style/_styles-page";
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  color: $bodyColor;
+  font-family: $nunito, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+a {
+  color: $colorLink;
+  text-decoration: none;
+  transition: opacity $tran-f;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.g-width {
+  width: 100%;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  position: sticky;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+}
+
+.g-main-cont {
+  //margin-top: 160px;
+  flex-grow: 1;
+}
+
+.footer {
+
+}
