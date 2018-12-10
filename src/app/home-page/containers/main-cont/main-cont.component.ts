@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageContComponent implements OnInit {
   
   people: any;
+  selectedSimpleItem: string = 'Deine Strasse und Hausnummer';
+  
   // items = [true, 'Two', 3];
   items: any;
 
